@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 private const val STATE_PENDING_OPERATION = "PendingOperation"
 private const val STATE_OPERAND1 = "Operand1"
 private const val STATE_OPERAND1_STORED = "Operand1_Stored"
-//private val STATE_OPERAND1_CLEAR = null
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -80,11 +80,8 @@ class MainActivity : AppCompatActivity() {
             operation.text = pendingOperation
             newNumber.setText("")
             result.setText("")
-
-
         }
     }
-
 
     private fun performOperation(value: Double, operation: String) {
         if (operand1 == null) {

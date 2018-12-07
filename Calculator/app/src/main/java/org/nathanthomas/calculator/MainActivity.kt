@@ -74,10 +74,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         buttonClear.setOnClickListener { view ->
+            operand1 = null
+            pendingOperation = "="
+
+            operation.text = pendingOperation
             newNumber.setText("")
             result.setText("")
-            pendingOperation = ""
-//            savedInstanceState?.putString(STATE_OPERAND1_CLEAR, null)
+
+
         }
     }
 

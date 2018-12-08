@@ -11,4 +11,11 @@ fun main(args: Array<String>) {
     val denise = Player("Denise", 2, 5, 1000)
     denise.show()
 
+    val lives = 3
+
+    if ( lives < 1) {
+        println("Game Over!")
+    } else {
+        pringln("You're still alive!")
+    }
 }

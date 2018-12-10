@@ -5,17 +5,44 @@ fun main(args: Array<String>) {
     val donkeyman = Player("Donkey Man", 4, 8)
     val pringle = Player("Pringle", 2, 5, 1000)
 
+    val axe = Weapon("Axe", 17)
+    val spear = Weapon("Spear", 15)
+    val maul = Weapon("Maul",20)
+    val bow = Weapon("Bow", 12)
+
+    val redPotion = Loot("Red Potion", LootType.POTION, 7.50)
+    nathan.inventory.add(redPotion)
+    nathan.showInventory()
+
+    nathan.weapon = axe
     nathan.show()
-    println()
+    //println("His ${nathan.weapon.name} does ${nathan.weapon.damageInflicted} damage.")
+    println(nathan)
+
+    louise.weapon = spear
     louise.show()
+    //println("Weapon: ${louise.weapon.name}")
+    //println("Weapon damage: ${louise.weapon.damageInflicted}.")
     println()
+
+    donkeyman.weapon = maul
     donkeyman.show()
+    //println("Weapon: ${donkeyman.weapon.name}.")
+    //println("Weapon")
     println()
+
+    pringle.weapon = bow
     pringle.show()
-    println("Weapon: ${pringle.weapon.name.toUpperCase()}")
-    println("Weapon damage: ${pringle.weapon.damageInflicted}")
+   // println("Weapon: ${pringle.weapon.name.toUpperCase()}")
+   // println("Weapon damage: ${pringle.weapon.damageInflicted}")
+    println()
 
 
+
+
+
+
+    println()
 
 
 /* <Description: Extra>
